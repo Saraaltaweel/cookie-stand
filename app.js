@@ -32,75 +32,75 @@ function Cookiestand(location,MinCust,MaxCust,AvgCookieSale){
     }
     }
     Cookiestand.prototype.header=function(){
-
-        let tr = document.createElement('tr');
+        let tr=document.createElement('tr');
         table.appendChild(tr);
-        let th = document.createElement('th');
-        tr.appendChild(th);
-        th.textContent = '   ';
-        
-        for (let i=0; i<hours.length; i++){
-        let th1 = document.createElement('th');
-        tr.appendChild(th1);
-        th1.textContent = hours[i];
-  
+        let emptyf=document.createElement('th');
+        tr.appendChild(emptyf);
+
+        let th;
+        for(let i=0 ; i<hours.length; i++){
+            th=document.createElement('th');
+            tr.appendChild(th);
+            th.textContent=hours[i];
+
+        }
+        let dailyTotal= document.createElement('th');
+        tr.appendChild(dailyTotal);
+        dailyTotal.textContent='Daily Total';
+
         }  
     
-    }
+    
     Cookiestand.prototype.rander=function(){
-        let tr1 =document.createElement('tr');   
-        let td =document.createElement('td');
-        tr1.appendChild(td);
-        td.textContent=this.location;
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
-        let td1=document.createElement('td1');
-        tr1.appendChild(td1);
-        td1.textContent=this.cookiesPerHour[0];
+        let tr =document.createElement('tr'); 
+        table.appendChild(tr); 
+        let locationTit=document.createElement('td');
+        tr.appendChild(locationTit);
+        locationTit.textContent=this.Location;
+        
+        let td;
+        for(let i=0; i<this.cookiesPerHour.length; i++){
+            td= document.createElement('td');
+            tr.appendChild(td);
+            td.textContent= this.cookiesPerHour;
+        }
+       
     
     
 
     }
+
+    let seattle=new Cookiestand('seattle',23,65,6.3);
+    let tokyo=new Cookiestand('tokyo',3,24,1.2);
+    let dubai=new Cookiestand('dubai',11,38,3.7);
+    let paris=new Cookiestand('paris',20,48,2.3);
+    let lima=new Cookiestand('lima',2,16,4.6);
+    
+    header();
+    seattle.randomCustomerPerHour();
+    seattle.cookiesPerHour();
+    seattle.rander();
+    tokyo.randomCustomerPerHour();
+    tokyo.cookiesPerHour();
+    tokyo.rander();
+    dubai.randomCustomerPerHour();
+    dubai.cookiesPerHour();
+    dubai.rander();
+    paris.randomCustomerPerHour();
+    paris.cookiesPerHour();
+    paris.rander();
+    lima.randomCustomerPerHour();
+    lima.cookiesPerHour();
+    lima.rander();
+
+
+
+
+
+
+
+    
+
     //   rander:function(){
         //       let headerEl=document.createElement('h2');
         //       container.appendChild(headerEl);
