@@ -1,3 +1,7 @@
+body{
+    background-color:peru;
+}
+
 table{
     border: 1px solid black;
 }
@@ -5,4 +9,42 @@ tr ,td ,th {
     border: 1px solid black;
     height: 50px;
 width: 50px;
+}
+
+header img{
+    height: 70px;
+    width: 70px;
+}
+header ul li{
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px;
+    color:black;
+   margin-top: 1px;
+
+}
+header h3 {
+    margin-left: 15px;
+    bottom: 0px;
+    color: chocolate;
+}
+nav {
+    position: relative;
+    margin-left: 100px;
+    bottom:70px;
+        
+}
+header{
+    background-color: rgb(65, 104, 80);
+}
+main h1 {
+    text-align: center;
+}
+ .img1 {
+    position: relative;
+    left: 150px;
+}
+.img2{
+    height: 250px;
+    width: 750px;
 }
