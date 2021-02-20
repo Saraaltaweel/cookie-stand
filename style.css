@@ -1,8 +1,48 @@
+form{
+    background-color: rgb(226, 187, 174);
+}
+
+
 table{
-    border: 1px solid black;
+    border: 1px solid palevioletred;
+    margin: 100px;
+    background-color: rgb(226, 187, 174);
+   
+    
 }
 tr ,td ,th {
-    border: 1px solid black;
-    height: 50px;
-width: 50px;
+    border: 1px solid palevioletred;
+    height: 40px;
+width: 60px;
+font-family: cursive;
+text-align: center;
 }
+form fieldset label {
+    margin-left: 500px;
+    font-family: cursive;
+    
+}
+form fieldset :last-child{
+    background-color: rgb(50, 47, 231);
+    color: white;
+    width: 20%;
+    padding: 5px;
+    position: relative;
+    left: 520px;
+    margin-top: 5px;
+    font-family: cursive;
+}
+form fieldset legend {
+    font-size: 20px;
+    text-align: center;
+    font-family:cursive;
+
+}
+a{
+    text-decoration: none;
+    font-size: large;
+    color: blue;
+    font-family: cursive;
+}
+
+

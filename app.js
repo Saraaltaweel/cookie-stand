@@ -110,7 +110,7 @@ function footer() {
          cookie.randomCustomerPerHour();
          cookie.cookiesSaledPerHour();
          cookie.random();
-         footer();
+         footer(table);
 
     }
 
