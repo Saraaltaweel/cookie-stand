@@ -35,7 +35,7 @@ nav {
         
 }
 header{
-    background-color: rgb(65, 104, 80);
+    background-color: rgb(245, 205, 137);
 }
 main h1 {
     text-align: center;
@@ -47,4 +47,12 @@ main h1 {
 .img2{
     height: 250px;
     width: 750px;
+}
+header a {
+    text-decoration: none;
+   font-family: fantasy;
+   position: relative;
+   left: 1100px;
+   bottom: 30px;
+   
 }
