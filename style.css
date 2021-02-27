@@ -1,5 +1,11 @@
+
 form{
     background-color: rgb(226, 187, 174);
+}
+
+
+body{
+    background-color:peru;
 }
 
 
@@ -45,5 +51,49 @@ a{
     font-family: cursive;
 }
 
+header img{
+    height: 70px;
+    width: 70px;
+}
+header ul li{
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px;
+    color:black;
+   margin-top: 1px;
 
+}
+header h3 {
+    margin-left: 15px;
+    bottom: 0px;
+    color: chocolate;
+}
+nav {
+    position: relative;
+    margin-left: 100px;
+    bottom:70px;
+        
+}
+header{
+    background-color: rgb(245, 205, 137);
+}
+main h1 {
+    text-align: center;
+}
+ .img1 {
+    position: relative;
+    left: 150px;
+}
+.img2{
+    height: 250px;
+    width: 750px;
+}
+header a {
+    text-decoration: none;
+   font-family: fantasy;
+   position: relative;
+   left: 1100px;
+   bottom: 30px;
+   
+}
 
